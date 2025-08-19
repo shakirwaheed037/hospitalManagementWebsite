@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Appointment - Docmed</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .appointment-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .page-header {
+      background: url('images/hospital-banner.jpg') center/cover no-repeat;
+      padding: 80px 0;
+      color: #c74b4b;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+
+   <!-- navbar code -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/headerlogo.png" alt="logo" style="height: 50px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="mainNavbar">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="dep.html">Department</a></li>
+          <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+          <!-- dropdwon of pages -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li><a class="dropdown-item" href="index.html">About Us</a></li>
+              <li><a class="dropdown-item" href="index.html">Departments</a></li>
+              <li><a class="dropdown-item" href="index.html">Doctors</a></li>
+              <li><a class="dropdown-item" href="appointment.html">Appointment</a></li>
+              <li><a class="dropdown-item" href="index.html">Blog</a></li>
+             <li><a class="dropdown-item" href="index.html">Testimonials</a></li>
+
+
+            </ul>
+          </li>
+
+
+
+          <li class="nav-item"><a class="nav-link" href="doctor.html">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#appoinment-now"><button class="btn btn-primary" >
+          Book for now
+        </button></a>
+      </div>
+    </div>
+  </nav>
+
+ 
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1 id="appoinment-now">Book an Appointment</h1>
+    <p>Fill in the form below and we’ll confirm your booking as soon as possible.</p>
+  </div>
+
+  <!-- Appointment Form -->
+  <section class="py-5">
+    <div class="container">
+      <div class="appointment-form">
+        <form>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Phone</label>
+              <input type="tel" class="form-control" placeholder="+92 300 1234567" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Select Department</label>
+              <select class="form-select" required>
+                <option value="">Choose...</option>
+                <option>Cardiology</option>
+                <option>Dental Care</option>
+                <option>Skin Care</option>
+                <option>Neurology</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Select Doctor</label>
+              <select class="form-select" required>
+                <option value="">Choose...</option>
+                <option>Dr. Wisal khan</option>
+                <option>Dr. Luqman khan</option>
+                <option>Dr. Hashir Mehmmod</option>
+                <option>Dr. Imran</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Preferred Date</label>
+              <input type="date" class="form-control" required>
+            </div>
+            <div class="col-md-12 mb-3">
+              <label class="form-label">Additional Notes</label>
+              <textarea class="form-control" rows="4" placeholder="Describe your problem..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Appointment</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5>About Us</h5>
+          <p>Docmed is committed to providing the highest quality healthcare with a personal touch.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="departments.html" class="text-light text-decoration-none">Departments</a></li>
+            <li><a href="doctors.html" class="text-light text-decoration-none">Doctors</a></li>
+            <li><a href="blog.html" class="text-light text-decoration-none">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p>200, D-block, Green lane, USA<br>+10 367 467 8934<br>docmed@contact.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="bg-secondary text-light text-center py-3">
+    <h6 class="mb-0">© 2025 All rights reserved | Made by <strong>CodexShakir</strong></h6>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
